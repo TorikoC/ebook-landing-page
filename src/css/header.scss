@@ -4,6 +4,7 @@ $height: 80px;
 $fixedHeight: 60px;
 
 .header {
+  z-index: 999;
   width: 100%;
   padding: 0 60px;
   height: $height;

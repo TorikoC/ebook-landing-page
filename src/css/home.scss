@@ -1,0 +1,35 @@
+.home {
+  padding: 120px 60px 0;
+  display: flex;
+  flex-direction: row;
+  &__intro {
+    flex: 1;
+    ul {
+      list-style: none;
+    }
+    li {
+      &::before {
+        content: '*';
+      }
+    }
+  }
+  &__img {
+    flex: 1;
+    position: relative;
+    img {
+      position: absolute;
+      bottom: -120px;
+      right: 50px;
+      box-shadow: 0 2px 16px 0 rgba($color: #000000, $alpha: 0.25);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .home {
+    flex-direction: column;
+    &__img {
+      display: none;
+    }
+  }
+}
