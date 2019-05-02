@@ -1,0 +1,27 @@
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.mb-xs {
+  margin-bottom: 10px;
+}
+.mb-sm {
+  margin-bottom: 20px;
+}
+.mb-md {
+  margin-bottom: 30px;
+}
+.mb-lg {
+  margin-bottom: 40px;
+}
+.mb-xg {
+  margin-bottom: 50px;
+}
