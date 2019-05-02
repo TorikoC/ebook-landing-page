@@ -1,6 +1,6 @@
 .feature {
   padding: 100px 50px;
-  background-color: #eee;
+  background-color: #fff;
 }
 .feature__list {
   display: flex;
@@ -12,7 +12,11 @@
 .feature__list-item {
   flex: 1;
   padding: 20px;
-  box-shadow: 0 2px 8px 0 rgba($color: #000000, $alpha: 0.25);
+  box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+  &:hover {
+    transform: translateY(-10px);
+  }
 }
 .feature__list-item + .feature__list-item {
   margin-left: 50px;
