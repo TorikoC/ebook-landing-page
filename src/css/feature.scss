@@ -1,0 +1,19 @@
+.feature {
+  padding: 100px 50px;
+  background-color: #eee;
+}
+.feature__list {
+  display: flex;
+  flex-direction: row;
+}
+.feature__title {
+  margin-bottom: 50px;
+}
+.feature__list-item {
+  flex: 1;
+  padding: 20px;
+  box-shadow: 0 2px 8px 0 rgba($color: #000000, $alpha: 0.25);
+}
+.feature__list-item + .feature__list-item {
+  margin-left: 50px;
+}
