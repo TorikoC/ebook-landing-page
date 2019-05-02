@@ -5,13 +5,71 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 body {
-  height: 9999px;
   font-size: 100%;
   font-family: 'Roboto', sans-serif;
+  color: #233;
 }
 
 .text-center {
+  text-align: center;
+}
+
+.divisor {
+  height: 2px;
+  width: 100%;
+  margin: 50px;
+  background-color: #f0f0f0;
+}
+.author {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  img {
+    object-fit: contain;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+}
+.author__meta {
+  text-align: center;
+}
+
+.author__intro {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+.author__intro-group {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.faq {
+  padding: 60px;
+  background-color: $blue;
+  color: #bbb;
+  &__title {
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    div {
+      width: 50%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.footer {
+  padding: 60px;
+  background-color: $darkblue;
+  color: #aaa;
   text-align: center;
 }
