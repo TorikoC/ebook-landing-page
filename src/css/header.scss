@@ -1,0 +1,55 @@
+// header style
+
+$height: 80px;
+$fixedHeight: 60px;
+
+.header {
+  width: 100%;
+  padding: 0 60px;
+  height: $height;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #eee;
+  transition: all 0.2s;
+
+  &--fixed {
+    background-color: #fff;
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.25);
+    height: $fixedHeight;
+    .header__logo img {
+      max-height: $fixedHeight;
+    }
+  }
+  &__logo {
+    img {
+      padding: 15px 0;
+      max-height: $height;
+      transition: all 0.2s;
+      width: auto;
+    }
+  }
+  &__nav {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    ul {
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    li + li {
+      margin-left: 40px;
+    }
+    li a {
+      font-size: 16px;
+      padding: 15px 0;
+    }
+  }
+}

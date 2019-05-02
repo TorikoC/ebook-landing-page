@@ -1,0 +1,14 @@
+a:link {
+  text-decoration: none;
+  transition: all 0.2s;
+  color: #333;
+}
+a:visited {
+  color: #333;
+}
+a:hover {
+  color: $red;
+}
+a:actiev {
+  color: $red;
+}
