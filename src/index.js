@@ -29,15 +29,4 @@ window.onload = () => {
     open.classList.toggle('open--close');
     ul.classList.toggle('active');
   });
-  function scroll(e) {
-    e.preventDefault();
-    if (e.deltaY > 0) {
-      window.scrollBy(0, 500);
-    } else {
-      window.scrollBy(0, -1000);
-    }
-  }
-  window.addEventListener('mousewheel', scroll, {
-    passive: false,
-  });
 };
