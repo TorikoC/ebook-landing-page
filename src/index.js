@@ -22,4 +22,12 @@ window.onload = () => {
     two.classList.add('index--active');
     cm.classList.add('comment__list--2');
   });
+
+  let open = document.querySelector('.open');
+  let ul = document.querySelector('.header__nav-sm ul');
+  open.addEventListener('click', event => {
+    open.classList.toggle('open--close');
+    ul.classList.toggle('active');
+    console.log(ul);
+  });
 };
